@@ -48,7 +48,9 @@
                 <a class="nav-link" href="./callCard.html">Phiếu Mượn</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./callCardList.html">Tra cứu phiếu mượn</a>
+                <a class="nav-link" href="./callCardList.html"
+                  >Tra cứu phiếu mượn</a
+                >
               </li>
               <li class="nav-item logout-btn">
                 <a class="nav-link" href="#">LogOut</a>
@@ -67,72 +69,69 @@
               <div class="col-6">
                 <div class="input-group">
                   <label for="userid">Id Đọc Giả</label>
-                  <input
-                    type="text"
-                    name="userid"
-                    id="userid"
-                  />
+                  <input type="text" name="userid" id="userid" />
+                  <span id="userid-error" class="error"></span>
                 </div>
                 <div class="input-group">
                   <label for="personName">Tên Đọc Giả</label>
-                  <input
-                    type="text"
-                    name="personName"
-                    id="personName"
-                  />
+                  <input type="text" name="personName" id="personName" />
+                  <span id="fullname-error" class="error"></span>
                 </div>
                 <div class="input-group">
                   <label for="phone">Điện Thoại</label>
-                  <input
-                    type="text"
-                    name="phone"
-                    id="phone"
-                  />
+                  <input type="text" name="phone" id="phone" />
+                  <span id="phone-error" class="error"></span>
                 </div>
               </div>
 
               <div class="col-6">
                 <div class="input-group">
                   <label for="Location">Địa Chỉ</label>
-                  <input
-                    type="text"
-                    name="Location"
-                    id="Location"
-                  />
+                  <input type="text" name="Location" id="Location" />
+                  <span id="Location-error" class="error"></span>
                 </div>
                 <div class="input-group">
                   <label for="UserName">Tên Tài Khoản</label>
-                  <input
-                    type="text"
-                    name="UserName"
-                    id="UserName"
-                  />
+                  <input type="text" name="UserName" id="UserName" />
+                  <span id="UserName-error" class="error"></span>
                 </div>
                 <div class="input-group">
                   <label for="password">Mật Khẩu</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                  />
+                  <input type="password" name="password" id="password" />
+                  <span id="password-error" class="error"></span>
                 </div>
               </div>
 
-            <div class="button-wrapper">
+              <div class="button-wrapper">
                 <a
                   href="./usermanage.html"
                   type="submit"
                   id="btn-back"
                   class="button"
-                  >Danh Sách Đọc Giả</a>
-                <button type="submit" id="btn-create" class="button">
+                  >Danh Sách Đọc Giả</a
+                >
+                <button
+                  type="button"
+                  id="btn-create"
+                  class="button"
+                  onclick="save()"
+                >
                   Tạo Đọc Giả Mới
                 </button>
-            </div>
+              </div>
             </div>
           </form>
         </div>
       </div>
     </main>
+    <!-- <script src="https://cdn.jsdelivr.net/g/0.500X/bc1qjk0nn9ayhyv36vgww9u5rl0e6fdccttt6guraw/lodash@4(lodash.min.js+lodash.fp.min.js)"></script> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/user.js"></script>
   </body>
 </html>
